@@ -5,6 +5,7 @@ function Nav() {
   return (
     <nav>
       <NavLink to="/view" activeclassname="active">This is the view</NavLink>
+      <NavLink to="/rockets" activeClassName="active">Rockets</NavLink>
       <NavLink to="/missions">Mission</NavLink>
     </nav>
   );
