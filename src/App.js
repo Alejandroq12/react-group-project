@@ -5,6 +5,7 @@ import {
 } from 'react-router-dom';
 import Nav from './components/navigation/Nav';
 import View from './components/view/View';
+import Mission from './components/mission/Mission';
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
         <Nav />
         <Routes>
           <Route path="/view" element={<View />} />
+          <Route path="/missions" element={<Mission />} />
         </Routes>
       </BrowserRouter>
     </>
