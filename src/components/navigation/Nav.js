@@ -1,10 +1,10 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 
 function Nav() {
   return (
     <nav>
-      <Link to="/view" activeClassName="active">This is the view</Link>
+      <NavLink to="/view" activeclassname="active">This is the view</NavLink>
     </nav>
   );
 }
