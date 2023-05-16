@@ -8,8 +8,32 @@ const Rockets = () => {
   const error = useSelector((state) => state.rockets.error);
 
   useEffect(() => {
-    if (rockets.lenght === 0) {
+    if (rockets.length === 0) {
       dispatch(fetchRocketsData());
     }
   }, [dispatch, rockets]);
+
+  return (
+    <div>
+      {error && (
+        <div>
+          Error:
+          {' '}
+          {error}
+        </div>
+      )}
+      {rockets.map((rocket) => (
+        <div key={rocket.id}>
+          <h2>{rocket.name}</h2>
+          <p>
+            Type:
+            {rocket.type}
+          </p>
+          <img src={rocket.flickr_images[0]} alt={`${rocket.name}`} />
+        </div>
+      ))}
+    </div>
+  );
 };
+
+export default Rockets;
