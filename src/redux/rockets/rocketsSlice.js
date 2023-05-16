@@ -20,6 +20,19 @@ const rocketsSlice = createSlice({
     builder
       .addCase(fetchRocketsData.pending, (state) => {
         state.status = 'loading';
+      })
+      .addCase(fetchRocketsData.fulfilled, (state, action) => {
+        state.status = 'succeeded';
+        state.data = action.payload.map((rocket) => ({
+          id: rocket.id,
+          name: rocket.rocket_name,
+          description: rocket.description,
+          flickr_images: rocket.flickr_images,
+        }));
+      })
+      .addCase(fetchRocketsData.rejected, (state, action) => {
+        state.status = 'failed';
+        state.error = action.error.message;
       });
   },
 });

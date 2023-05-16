@@ -27,7 +27,7 @@ const Rockets = () => {
           <h2>{rocket.name}</h2>
           <p>
             Type:
-            {rocket.type}
+            {rocket.description}
           </p>
           <img src={rocket.flickr_images[0]} alt={`${rocket.name}`} />
         </div>
