@@ -36,6 +36,32 @@
   font-family: Arial, sans-serif;
 }
 
+.reserved-badge {
+  display: inline-block;
+  background-color: green;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+  margin-right: 5px;
+  font-size: 0.8em;
+}
+
+.button {
+  background-color: rgba(38, 115, 247);
+  color: white;
+  padding: 8px 12px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  font-size: 1em;
+  margin-top: 10px;
+  max-width: 230px;
+}
+
+.button:hover {
+  background-color: darkblue;
+}
+
 @media (max-width: 768px) {
   .rocket {
     flex-direction: column;
