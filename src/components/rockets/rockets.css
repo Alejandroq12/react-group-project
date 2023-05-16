@@ -33,6 +33,7 @@
 .rocket-name {
   font-size: 1.2em;
   font-weight: bold;
+  font-family: Arial, sans-serif;
 }
 
 @media (max-width: 768px) {
