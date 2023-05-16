@@ -9,3 +9,9 @@
   padding: 16px;
   width: 35%;
 }
+
+.view {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-around;
+}

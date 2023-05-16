@@ -31,6 +31,7 @@ function Mission() {
             <h1 className="h1">Name</h1>
             <h1 className="h1-description">Description</h1>
             <h1 className="h1-status">Status</h1>
+            <div className="h1-status-2" />
           </div>
           {missions.data && missions.data.length > 0 ? (
             missions.data.map((mission) => (
