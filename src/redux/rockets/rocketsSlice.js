@@ -6,3 +6,8 @@ const initialState = {
   status: 'idle',
   error: null,
 };
+
+export const fetchRocketsData = createAsyncThunk('rockets/fetchRocketsData', async () => {
+  const response = await fetchRockets();
+  return response;
+});
