@@ -2,6 +2,7 @@ import {
   Route,
   Routes,
   BrowserRouter,
+  Navigate,
 } from 'react-router-dom';
 import Nav from './components/navigation/Nav';
 import View from './components/view/View';
@@ -14,9 +15,10 @@ function App() {
       <BrowserRouter>
         <Nav />
         <Routes>
-          <Route path="/view" element={<View />} />
+          <Route path="/" element={<Navigate to="/rockets" />} />
           <Route path="/rockets" element={<Rockets />} />
           <Route path="/missions" element={<Mission />} />
+          <Route path="/view" element={<View />} />
         </Routes>
       </BrowserRouter>
     </>
