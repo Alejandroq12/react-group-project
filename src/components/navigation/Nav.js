@@ -1,12 +1,21 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
+import logo from '../../assets/planet.png';
+import './nav.css';
 
 function Nav() {
   return (
     <nav>
-      <NavLink to="/view" activeclassname="active">This is the view</NavLink>
-      <NavLink to="/rockets" activeclassname="active">Rockets</NavLink>
-      <NavLink to="/missions" activeclassname="active">Mission</NavLink>
+      <div className="nav-left">
+        <img className="nav-logo" src={logo} alt="Space Travelers' Hub Logo" />
+        <span className="nav-title">Space Travelers&apos; Hub</span>
+      </div>
+      <div className="nav-right">
+        <NavLink className="nav-link" to="/rockets" activeClassName="active">Rockets</NavLink>
+        <NavLink className="nav-link" to="/missions" activeClassName="active">Missions</NavLink>
+        <div className="nav-divider" />
+        <NavLink className="nav-link" to="/view" activeClassName="active">My Profile</NavLink>
+      </div>
     </nav>
   );
 }
