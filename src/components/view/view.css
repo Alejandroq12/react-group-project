@@ -1,0 +1,11 @@
+.reserved-rockets-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.reserved-rocket {
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 16px;
+  width: 35%;
+}
