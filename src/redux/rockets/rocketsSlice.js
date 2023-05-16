@@ -11,3 +11,17 @@ export const fetchRocketsData = createAsyncThunk('rockets/fetchRocketsData', asy
   const response = await fetchRockets();
   return response;
 });
+
+const rocketsSlice = createSlice({
+  name: 'rockets',
+  initialState,
+  reducers: {},
+  extraReducers: (builder) => {
+    builder
+      .addCase(fetchRocketsData.pending, (state) => {
+        state.status = 'loading';
+      });
+  },
+});
+
+export default rocketsSlice.reducer;
