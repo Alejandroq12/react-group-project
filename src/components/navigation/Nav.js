@@ -4,8 +4,9 @@ import { NavLink } from 'react-router-dom';
 function Nav() {
   return (
     <nav>
-      <NavLink to="/" activeclassname="active">This is the view</NavLink>
-      <NavLink to="/missions">Mission</NavLink>
+      <NavLink to="/view" activeclassname="active">This is the view</NavLink>
+      <NavLink to="/rockets" activeClassName="active">Rockets</NavLink>
+      <NavLink to="/missions" activeClassName="active">Mission</NavLink>
     </nav>
   );
 }
