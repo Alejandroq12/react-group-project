@@ -13,7 +13,7 @@ function App() {
       <BrowserRouter>
         <Nav />
         <Routes>
-          <Route path="/view" element={<View />} />
+          <Route path="/" element={<View />} />
           <Route path="/missions" element={<Mission />} />
         </Routes>
       </BrowserRouter>
