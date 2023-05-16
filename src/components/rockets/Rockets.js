@@ -1,7 +1,4 @@
-const Rockets = () => (
-  <div>
-    <h1>Rockets</h1>
-  </div>
-);
+import { useEffect } from 'react';
+import { useSelector, useDispatch } from 'react-redux';
+import { fetchRocketsData } from '../../redux/rockets/rocketsSlice';
 
-export default Rockets;
