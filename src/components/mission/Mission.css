@@ -1,15 +1,15 @@
 .container {
   display: grid;
   grid-template-columns: 1fr 5fr 1fr 1fr;
-  grid-template-rows: 10rem;
-  padding: 1rem 0 1rem 0;
+  grid-template-rows: 100%;
   background-color: #fff;
-  height: 10rem;
+  height: 100%;
   margin-top: -2.4rem;
+  padding: 2rem 0.5rem 1rem 0.5rem;
 }
 
 .container:nth-child(odd) {
-  background-color: #939292;
+  background-color: #d9d9d9;
 }
 
 .mission-container {
@@ -20,25 +20,59 @@
 }
 
 .h1 {
-  border: #939292 1px solid;
+  border: #000 1px solid;
 }
 
 .h1-description {
-  border: #939292 1px solid;
+  border: #000 1px solid;
 }
 
 .h2 {
-  border-right: 1px solid #939292;
   height: 100%;
 }
 
 .description {
-  border-right: 1px solid #939292;
   height: 100%;
+  font-size: 16px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 .mission-btn {
-  border: 1px solid #939292;
-  height: 97%;
-  margin-top: -1rem;
+  border: 3px solid #f00;
+  background-color: transparent;
+  color: #f00;
+  height: 2rem;
+}
+
+.mission-stats {
+  background-color: #329eeb;
+  color: #fff;
+  padding: 0.4rem;
+  border-radius: 3px;
+}
+
+.reserved {
+  border: 1px solid #000;
+  display: grid;
+  place-items: center;
+}
+
+.reserved-btn {
+  border: 1px solid #000;
+  display: grid;
+  place-items: center;
+}
+
+.mission-btn-red {
+  border: 3px solid #5b5b5b;
+  background-color: transparent;
+  color: #5b5b5b;
+  height: 2rem;
+}
+
+.mission-stats-red {
+  background-color: #5b5b5b;
+  color: #fff;
+  padding: 0.4rem;
+  border-radius: 3px;
 }

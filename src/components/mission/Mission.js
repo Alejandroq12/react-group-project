@@ -1,6 +1,6 @@
 import { useDispatch, useSelector } from 'react-redux';
 import { useEffect } from 'react';
-import { fetchData } from '../../redux/mission/missionSlice';
+import { fetchData, joinMission, leaveMission } from '../../redux/mission/missionSlice';
 import './Mission.css';
 
 function Mission() {
@@ -12,6 +12,14 @@ function Mission() {
       dispatch(fetchData());
     }
   }, [missions.status, dispatch]);
+
+  const handleJoinMission = (missionId) => {
+    dispatch(joinMission(missionId));
+  };
+
+  const handleLeaveMission = (missionId) => {
+    dispatch(leaveMission(missionId));
+  };
 
   return (
     <div>
@@ -29,8 +37,32 @@ function Mission() {
               <div className="container" key={mission.mission_id}>
                 <h2 className="h2">{mission.mission_name}</h2>
                 <p className="description">{mission.description}</p>
-                <div className="mission-stats">Not A Member</div>
-                <button type="button" className="mission-btn">Join Mission </button>
+                <div className="reserved">
+                  {mission.reserved ? (
+                    <p className="mission-stats">Active Member</p>
+                  ) : (
+                    <p className="mission-stats-red">Not A Member</p>
+                  )}
+                </div>
+                <div className="reserved-btn">
+                  {mission.reserved ? (
+                    <button
+                      onClick={() => handleLeaveMission(mission.mission_id)}
+                      type="button"
+                      className="mission-btn"
+                    >
+                      Leave Mission
+                    </button>
+                  ) : (
+                    <button
+                      onClick={() => handleJoinMission(mission.mission_id)}
+                      type="button"
+                      className="mission-btn-red"
+                    >
+                      Join Mission
+                    </button>
+                  )}
+                </div>
               </div>
             ))
           ) : (
