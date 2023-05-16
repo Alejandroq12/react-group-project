@@ -1,0 +1,44 @@
+.container {
+  display: grid;
+  grid-template-columns: 1fr 5fr 1fr 1fr;
+  grid-template-rows: 10rem;
+  padding: 1rem 0 1rem 0;
+  background-color: #fff;
+  height: 10rem;
+  margin-top: -2.4rem;
+}
+
+.container:nth-child(odd) {
+  background-color: #939292;
+}
+
+.mission-container {
+  display: grid;
+  grid-template-columns: 1fr 5fr 1fr 1fr;
+  grid-template-rows: 5rem;
+  margin: 1rem 0 1rem 0;
+}
+
+.h1 {
+  border: #939292 1px solid;
+}
+
+.h1-description {
+  border: #939292 1px solid;
+}
+
+.h2 {
+  border-right: 1px solid #939292;
+  height: 100%;
+}
+
+.description {
+  border-right: 1px solid #939292;
+  height: 100%;
+}
+
+.mission-btn {
+  border: 1px solid #939292;
+  height: 97%;
+  margin-top: -1rem;
+}
