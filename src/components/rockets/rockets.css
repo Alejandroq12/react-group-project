@@ -1,0 +1,48 @@
+.rockets-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.rocket {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+.rocket-img {
+  width: 100%;
+  max-width: 300px;
+  margin-right: 20px;
+  object-fit: cover;
+}
+
+.rocket-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.rocket-info p:first-child {
+  margin-top: 0;
+  margin-bottom: 0.1em;
+}
+
+.rocket-name {
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+@media (max-width: 768px) {
+  .rocket {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .rocket-img {
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+}
