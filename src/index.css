@@ -25,3 +25,8 @@ code {
     'Courier New',
     monospace;
 }
+
+.active {
+  text-decoration: underline;
+  color: lightskyblue;
+}
