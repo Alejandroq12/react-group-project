@@ -1,100 +1,87 @@
 .big-container {
-  margin-top: -2.4rem;
+  margin: -1.5rem auto 0;
+  width: 95%;
 }
 
-.mission-container {
-  display: grid;
-  grid-template-columns: 1fr 5fr 1fr 1fr;
-  grid-template-rows: 5rem;
-  margin: 1rem 0 0 0;
+.mission-table {
+  border-collapse: collapse;
+  width: 100%;
 }
 
-.container {
-  display: grid;
-  grid-template-columns: 1fr 5fr 1fr 1fr;
-  grid-template-rows: 100%;
-  background-color: #fff;
-  height: 100%;
+.mission-table th,
+.mission-table td {
+  border: 1px solid #808080;
+  padding: 1rem;
+  text-align: left;
 }
 
-.container:nth-child(odd) {
+.mission-table tr:nth-child(odd) {
   background-color: #d9d9d9;
 }
 
-.h1-status {
-  border: #000 1px solid;
-  padding-left: 1rem;
-  margin-left: -0.3rem;
+.mission-table th {
+  background-color: #f2f2f2;
+  font-size: 2rem;
 }
 
-.h1 {
-  border: #000 1px solid;
-  padding-left: 1rem;
-}
-
-.h1-description {
-  border-top: #000 1px solid;
-  border-left: #000 1px solid;
-  border-bottom: #000 1px solid;
-  padding-left: 1rem;
-}
-
-.h2 {
-  height: 100%;
-  border-right: #000 1px solid;
-  border-bottom: #000 1px solid;
-  margin-top: -0.1rem;
-  display: grid;
-  place-items: center;
-}
-
-.description {
-  height: 100%;
+.mission-table td {
   font-size: 16px;
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-  border-right: #000 1px solid;
-  border-bottom: #000 1px solid;
-  margin-top: -0.1rem;
+  font-family:
+    'Lucida Sans',
+    'Lucida Sans Regular',
+    'Lucida Grande',
+    'Lucida Sans Unicode',
+    Geneva,
+    Verdana,
+    sans-serif;
 }
 
-.mission-btn-red {
-  border: 3px solid #5b5b5b;
-  background-color: transparent;
-  color: #5b5b5b;
-  height: 2rem;
+.mission-table td:first-child {
+  font-weight: bold;
+  width: 12%;
 }
 
+.mission-table td:nth-child(3),
+.mission-table td:last-child {
+  width: 10%;
+}
+
+.mission-stats,
 .mission-stats-red {
-  background-color: #5b5b5b;
-  color: #fff;
+  display: inline-block;
   padding: 0.2rem;
   border-radius: 3px;
 }
 
-.mission-btn {
-  border: 3px solid #f00;
+.mission-btn,
+.mission-btn-red {
+  border: 3px solid;
   background-color: transparent;
-  color: #f00;
   height: 2rem;
+  cursor: pointer;
+}
+
+.mission-btn {
+  border-color: #f00;
+  color: #f00;
+}
+
+.mission-btn-red {
+  border-color: #5b5b5b;
+  color: #5b5b5b;
+}
+
+.mission-btn:hover,
+.mission-btn-red:hover {
+  background-color: rgba(0, 0, 0, 0.1);
 }
 
 .mission-stats {
   background-color: #329eeb;
   color: #fff;
-  padding: 0.2rem;
-  border-radius: 3px;
 }
 
-.reserved {
-  border-left: 1px solid #000;
-  border-bottom: 1px solid #000;
-  display: grid;
-  place-items: center;
-}
-
-.reserved-btn {
-  border-left: 1px solid #000;
-  border-bottom: 1px solid #000;
-  display: grid;
-  place-items: center;
+.mission-stats-red {
+  background-color: #5b5b5b;
+  color: #fff;
 }
