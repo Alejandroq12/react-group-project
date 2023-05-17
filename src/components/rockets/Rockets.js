@@ -51,7 +51,7 @@ const Rockets = () => {
             </p>
             {rocket.reserved ? (
               <button
-                className="button"
+                className="button button-cancel"
                 type="submit"
                 onClick={() => handleCancelReservation(rocket.id)}
               >

@@ -27,48 +27,56 @@ function Mission() {
       {missions.status === 'failed' && <div>{missions.error}</div>}
       {missions.status === 'succeeded' && (
         <div className="big-container">
-          <div className="mission-container">
-            <h1 className="h1">Name</h1>
-            <h1 className="h1-description">Description</h1>
-            <h1 className="h1-status">Status</h1>
-            <div className="h1-status-2" />
-          </div>
-          {missions.data && missions.data.length > 0 ? (
-            missions.data.map((mission) => (
-              <div className="container" key={mission.mission_id}>
-                <h2 className="h2">{mission.mission_name}</h2>
-                <p className="description">{mission.description}</p>
-                <div className="reserved">
-                  {mission.reserved ? (
-                    <p className="mission-stats">Active Member</p>
-                  ) : (
-                    <p className="mission-stats-red">Not A Member</p>
-                  )}
-                </div>
-                <div className="reserved-btn">
-                  {mission.reserved ? (
-                    <button
-                      onClick={() => handleLeaveMission(mission.mission_id)}
-                      type="button"
-                      className="mission-btn"
-                    >
-                      Leave Mission
-                    </button>
-                  ) : (
-                    <button
-                      onClick={() => handleJoinMission(mission.mission_id)}
-                      type="button"
-                      className="mission-btn-red"
-                    >
-                      Join Mission
-                    </button>
-                  )}
-                </div>
-              </div>
-            ))
-          ) : (
-            <div>No missions available.</div>
-          )}
+          <table className="mission-table">
+            <thead>
+              <tr>
+                <th>Mission</th>
+                <th>Description</th>
+                <th>Status</th>
+                <th> </th>
+              </tr>
+            </thead>
+            <tbody>
+              {missions.data && missions.data.length > 0 ? (
+                missions.data.map((mission) => (
+                  <tr key={mission.mission_id}>
+                    <td>{mission.mission_name}</td>
+                    <td>{mission.description}</td>
+                    <td>
+                      {mission.reserved ? (
+                        <span className="mission-stats">Active Member</span>
+                      ) : (
+                        <span className="mission-stats-red">Not A Member</span>
+                      )}
+                    </td>
+                    <td>
+                      {mission.reserved ? (
+                        <button
+                          onClick={() => handleLeaveMission(mission.mission_id)}
+                          type="button"
+                          className="mission-btn"
+                        >
+                          Leave Mission
+                        </button>
+                      ) : (
+                        <button
+                          onClick={() => handleJoinMission(mission.mission_id)}
+                          type="button"
+                          className="mission-btn-red"
+                        >
+                          Join Mission
+                        </button>
+                      )}
+                    </td>
+                  </tr>
+                ))
+              ) : (
+                <tr>
+                  <td colSpan="4">No missions available.</td>
+                </tr>
+              )}
+            </tbody>
+          </table>
         </div>
       )}
     </div>

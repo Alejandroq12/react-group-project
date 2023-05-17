@@ -9,7 +9,7 @@ export const fetchData = createAsyncThunk('missions', async () => {
 });
 
 const initialState = {
-  data: [], // Change from 'missions' to 'data'
+  data: [],
   status: 'idle',
   error: null,
 };
@@ -43,13 +43,13 @@ const missionSlice = createSlice({
 
     builder.addCase(fetchData.fulfilled, (state, action) => ({
       ...state,
-      status: 'succeeded', // Correct typo: 'Succeeded' to 'succeeded'
+      status: 'succeeded',
       data: action.payload,
     }));
 
     builder.addCase(fetchData.rejected, (state, action) => ({
       ...state,
-      status: 'failed', // Correct typo: 'Failed' to 'failed'
+      status: 'failed',
       error: action.error.message,
     }));
   },
