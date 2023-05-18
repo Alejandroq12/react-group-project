@@ -11,10 +11,10 @@ function Nav() {
         <span className="nav-title">Space Travelers&apos; Hub</span>
       </div>
       <div className="nav-right">
-        <NavLink className="nav-link" to="/rockets" activeClassName="active">Rockets</NavLink>
-        <NavLink className="nav-link" to="/missions" activeClassName="active">Missions</NavLink>
+        <NavLink className="nav-link" to="/rockets" activeclassname="active">Rockets</NavLink>
+        <NavLink className="nav-link" to="/missions" activeclassname="active">Missions</NavLink>
         <div className="nav-divider" />
-        <NavLink className="nav-link" to="/view" activeClassName="active">My Profile</NavLink>
+        <NavLink className="nav-link" to="/view" activeclassname="active">My Profile</NavLink>
       </div>
     </nav>
   );

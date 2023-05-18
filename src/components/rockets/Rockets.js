@@ -28,7 +28,7 @@ const Rockets = () => {
   };
 
   return (
-    <div className="rockets-container">
+    <div className="rockets-container" data-testid="rockets-container">
       {loading && <div>Loading...</div>}
       {error && (
         <div>
