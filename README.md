@@ -175,9 +175,9 @@ You can deploy this project using: Render,
 
 👤 **Tisloh Tebe**
 
-- GitHub: [Alejandroq12](https://github.com/Booze33)
-- Twitter: [@JulioAle54](https://twitter.com/Tebe95645832)
-- LinkedIn: [Julio Quezada](https://www.linkedin.com/in/tebe-tisloh-847956225/)
+- GitHub: [Booze33](https://github.com/Booze33)
+- Twitter: [Tebe](https://twitter.com/Tebe95645832)
+- LinkedIn: [Tisloh Tebe](https://www.linkedin.com/in/tebe-tisloh-847956225/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
