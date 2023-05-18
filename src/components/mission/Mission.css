@@ -85,3 +85,59 @@
   background-color: #5b5b5b;
   color: #fff;
 }
+
+@media screen and (max-width: 768px) {
+  .big-container {
+    width: 100%;
+  }
+
+  .mission-table th,
+  .mission-table td {
+    padding: 0.5rem;
+    text-align: center;
+  }
+
+  .mission-table th {
+    font-size: 1.5rem;
+  }
+
+  .mission-table td {
+    font-size: 14px;
+  }
+
+  .mission-btn,
+  .mission-btn-red {
+    height: 1.5rem;
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .big-container {
+    width: 100%;
+  }
+
+  .mission-table th,
+  .mission-table td {
+    padding: 0.3rem;
+    text-align: center;
+  }
+
+  .mission-table th {
+    font-size: 1.2rem;
+  }
+
+  .mission-table td {
+    font-size: 12px;
+  }
+
+  .mission-btn,
+  .mission-btn-red {
+    height: auto;
+    width: 100%;
+    padding: 0.5rem;
+    font-size: 10px;
+    white-space: normal;
+    text-align: center;
+  }
+}

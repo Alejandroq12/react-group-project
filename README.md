@@ -19,6 +19,7 @@
   - [🛠 Built With ](#-built-with-)
     - [Tech Stack ](#tech-stack-)
     - [Key Features ](#key-features-)
+  - [🚀 Live Demo ](#-live-demo-)
   - [💻 Getting Started ](#-getting-started-)
     - [Prerequisites](#prerequisites)
     - [Setup](#setup)
@@ -84,14 +85,14 @@ Redux Toolkit,
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-<!-- LIVE DEMO 
+<!-- LIVE DEMO -->
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- [Live Demo Link](https://candid-quokka-8e7e31.netlify.app/)
+- [Live Demo Link](https://spacex-iq7v.onrender.com/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
--->
+
 <!-- GETTING STARTED -->
 
 ## 💻 Getting Started <a name="getting-started"></a>
@@ -149,12 +150,16 @@ npx stylelint "**/*.{css,scss}"
 ```
 npx eslint "**/*.{js,jsx}"
 ```
+- Jest tests
+```
+npm test
+```
 
 ### Deployment <a name="deployment"></a>
 
-You can deploy this project using: GitHub Pages,
-- I will use  Netlify Pages to deploy my website.
-- For more information about deployment on Netlify see "[Netlify](https://www.netlify.com/)".
+You can deploy this project using: Render,
+- We used Render to deploy my website.
+- For more information about deployment on Netlify see "[Render](https://www.render.com/)".
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
