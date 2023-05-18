@@ -1,0 +1,143 @@
+.big-container {
+  margin: -1.5rem auto 0;
+  width: 95%;
+}
+
+.mission-table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.mission-table th,
+.mission-table td {
+  border: 1px solid #808080;
+  padding: 1rem;
+  text-align: left;
+}
+
+.mission-table tr:nth-child(odd) {
+  background-color: #d9d9d9;
+}
+
+.mission-table th {
+  background-color: #f2f2f2;
+  font-size: 2rem;
+}
+
+.mission-table td {
+  font-size: 16px;
+  font-family:
+    'Lucida Sans',
+    'Lucida Sans Regular',
+    'Lucida Grande',
+    'Lucida Sans Unicode',
+    Geneva,
+    Verdana,
+    sans-serif;
+}
+
+.mission-table td:first-child {
+  font-weight: bold;
+  width: 12%;
+}
+
+.mission-table td:nth-child(3),
+.mission-table td:last-child {
+  width: 10%;
+}
+
+.mission-stats,
+.mission-stats-red {
+  display: inline-block;
+  padding: 0.2rem;
+  border-radius: 3px;
+}
+
+.mission-btn,
+.mission-btn-red {
+  border: 3px solid;
+  background-color: transparent;
+  height: 2rem;
+  cursor: pointer;
+}
+
+.mission-btn {
+  border-color: #f00;
+  color: #f00;
+}
+
+.mission-btn-red {
+  border-color: #5b5b5b;
+  color: #5b5b5b;
+}
+
+.mission-btn:hover,
+.mission-btn-red:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.mission-stats {
+  background-color: #329eeb;
+  color: #fff;
+}
+
+.mission-stats-red {
+  background-color: #5b5b5b;
+  color: #fff;
+}
+
+@media screen and (max-width: 768px) {
+  .big-container {
+    width: 100%;
+  }
+
+  .mission-table th,
+  .mission-table td {
+    padding: 0.5rem;
+    text-align: center;
+  }
+
+  .mission-table th {
+    font-size: 1.5rem;
+  }
+
+  .mission-table td {
+    font-size: 14px;
+  }
+
+  .mission-btn,
+  .mission-btn-red {
+    height: 1.5rem;
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .big-container {
+    width: 100%;
+  }
+
+  .mission-table th,
+  .mission-table td {
+    padding: 0.3rem;
+    text-align: center;
+  }
+
+  .mission-table th {
+    font-size: 1.2rem;
+  }
+
+  .mission-table td {
+    font-size: 12px;
+  }
+
+  .mission-btn,
+  .mission-btn-red {
+    height: auto;
+    width: 100%;
+    padding: 0.5rem;
+    font-size: 10px;
+    white-space: normal;
+    text-align: center;
+  }
+}
